@@ -3,7 +3,7 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav() {
     const categories = [
-        {name: "commercial", description: "Photos of grocery stores, food trucks, and other commercial projects"},
+        { name: "commercial", description: "Photos of grocery stores, food trucks, and other commercial projects"},
         { name: "portraits", description: "Portraits of people in my life"},
         { name: "food", description: "Delicious delicacies"},
         {
@@ -19,14 +19,14 @@ function Nav() {
     return (
         <header className="flex-row px-1">
             <h2>
-                <a href="/">
+                <a data-testid="link" href="/">
                     <span role="img" aria-label="camera">📸</span> Oh Snap!
                 </a>
             </h2>
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
-                        <a href="#about">
+                        <a data-testid="about" href="#about">
                             About Me
                         </a>
                     </li>
