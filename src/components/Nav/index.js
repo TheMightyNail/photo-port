@@ -39,9 +39,11 @@ function Nav(props) {
             </nav>
         </header>
     );
-    // useEffect(() => {
-    //     document.title = capitalizeFirstLetter(currentCategory.name);
-    // }, [currentCategory]);
+
+    useEffect(() => {
+        document.title = capitalizeFirstLetter(currentCategory.name);
+    }, [currentCategory]);
+    
 }
 
 
